@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" href="pageLogo2.png">
 
@@ -38,12 +39,12 @@
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./call.html');">Call for Papers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./organizers.html');">Organizers</a>
+        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./organizers.html');"><span class="current-nav">Organizers</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./papers.html');">Papers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./schedule.html');">Workshop Schedule and Location</a>
       </li>
       <li class="nav-item">
@@ -54,8 +55,8 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-top sticky-offset" style="background-color: #e8dcf5;">
+  <div class="row mb-5">
+    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-offset" style="background-color: #e8dcf5;">
       <!-- <h2>About Me</h2> -->
       <h5 class="mb-0">IEEE VIS 2020, Salt Lake City, Utah <br> <span class="theme-color">25-30 October 2020</span></h5>
       <br>
@@ -100,27 +101,51 @@
 			<h6>Oct 25-26th</h6>
 		</div>
 	</div> -->
-      <hr class="d-sm-none">
+      <!-- <hr class="d-sm-none"> -->
     </div>
     <div class="col-sm-8 col-lg-9 col-md-8 pt-4">
-		<h4> Organizers</h4>
-		<br>
-		<p>   
-			<ol>
-                <li> Mahsan Nourani, University of Florida</li>
-                <li> Eric Ragan, University of Florida</li>
-				<li> Emilly Wall, Georgia Tech</li>
-                <li> Aritra Dasgupta, New Jersey Institute of Technology</li>
-                <li> John Goodall, Oak Ridge National Lab</li>
-                <li>Kris Cook, Pacific North National Lab</li>
-			</ol>
-		</p>
+		<h4 class="col-sm-3 pl-0"> Organizers</h4>
+        <br>
+        <div class="card-columns">
+            <div class="card text-center border-0">
+                <a href="https://www.cise.ufl.edu/~eragan/" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg" src="Eric.jpg" alt="Card image"></a>
+                <div class="card-body text-center"><a href="https://www.cise.ufl.edu/~eragan/" target="_blank"><span style="color:black;">Eric Ragan</span></a><br><span class="theme-color">University of Florida</span></div>
+            </div>
+            <div class="card text-center border-0">
+                <a href="https://mahsan.online" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg" src="Mahsan.jpeg" alt="Card image"></a>
+                <div class="card-body text-center"><a href="https://mahsan.online" target="_blank"><span style="color:black;">Mahsan Nourani</span></a><br><span class="theme-color">University of Florida</span></div>
+            </div>
+            <div class="card text-center border-0">
+                <a href="https://www.cc.gatech.edu/~ewall9/" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg" src="Emily.jpg" alt="Card image"></a>
+                <div class="card-body text-center"><a href="https://www.cc.gatech.edu/~ewall9/" target="_blank"><span style="color:black;">Emily Wall</span></a> <br><span class="theme-color">Georgia Tech</span></div>
+            </div>
+        </div>
+        <div class="card-columns">
+            <div class="card text-center border-0">
+                <a href="https://aedeegee.github.io/" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg" src="Aritra2.jpg" alt="Card image"></a>
+                <div class="card-body text-center pr-1 pl-1"><span style="color:black;">Aritra Dasgupta</span></a> <br><span class="theme-color">New Jersey Institute of Technology</span></div>
+            </div>
+            
+            <div class="card text-center border-0">
+                <a href="https://jgoodall.me/" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg pt-1" src="John.jpg" alt="Card image"></a>
+                <div class="card-body text-center"><a href="https://jgoodall.me/" target="_blank"><span style="color:black;">John Goodall</span></a> <br><span class="theme-color">Oak Ridge National Lab</span></div>
+            </div>
+            <div class="card text-center border-0">
+                <a href="https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=8639" target="_blank"><img class="card-img-top image-org rounded-circle shadow-lg" src="Kris.jpg" alt="Card image">
+                <div class="card-body text-center"><a href="https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=8639" target="_blank"></a><span style="color:black;">Kris Cook</span></a> <br><span class="theme-color"> Pacific North National Lab</span></div>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div> -->
+<hr>
+<div class="row text-center mb-1">
+	<div class="col-sm-12">
+		<i class="text-center" style="color: #5e5d5d; font-size: 0.7rem;"> Copyright <i class="far fa-copyright"></i> 
+			<script>document.write( new Date().getUTCFullYear() );</script> TREX First Workshop on Trust and Experience In Visual Analytics.</i>
+		<i style="color: #5e5d5d; font-size: 0.7rem;"> Workshop logo made from vectors published by <a href="https://www.freepik.com/free-photos-vectors/background">freepik.com</a>. Copyright belongs to freepik and art creators. </i>
+	</div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

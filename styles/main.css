@@ -4,12 +4,24 @@ h1 {
 
 .side-panel {
     height: 450px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
 @media (min-width:576px) {
     h1 {
       /* Never get larger than this */
       font-size: 1.5rem;
+    }
+
+    .side-panel {
+        height: 530px;
+    }
+
+    .sticky-offset {
+        top: 56px;
+        position: sticky;
+        z-index: 1020;
     }
 }
 
@@ -42,7 +54,7 @@ h1 {
 
 #logo {
     bottom: -19px;
-    z-index: 10;
+    z-index: 1022;
 }
 
 .navbar {
@@ -75,6 +87,13 @@ h1 {
     overflow-y: auto;
 }
 
-.sticky-offset {
-    top: 56px
+.image-org {
+    max-height: 200px;
+    max-width: 100px;
+}
+
+.current-nav {
+    font-weight: bold;
+    border-bottom: solid 1px;
+    padding-bottom: 3px;
 }

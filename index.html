@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" href="pageLogo2.png">
 
@@ -32,7 +33,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav nav-fill w-100">
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./index.html');">About TREX</a>
+        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./index.html');"><span class="current-nav">About TREX</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./call.html');">Call for Papers</a>
@@ -40,10 +41,10 @@
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./organizers.html');">Organizers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./papers.html');">Papers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./schedule.html');">Workshop Schedule and Location</a>
       </li>
       <li class="nav-item">
@@ -54,8 +55,8 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-top sticky-offset" style="background-color: #e8dcf5;">
+  <div class="row mb-5">
+    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-offset" style="background-color: #e8dcf5;">
       <!-- <h2>About Me</h2> -->
       <h5 class="mb-0">IEEE VIS 2020, Salt Lake City, Utah <br> <span class="theme-color">25-30 October 2020</span></h5>
       <br>
@@ -100,23 +101,25 @@
 			<h6>Oct 25-26th</h6>
 		</div>
 	</div> -->
-      <hr class="d-sm-none">
+      <!-- <hr class="d-sm-none"> -->
     </div>
     <div class="col-sm-8 col-lg-9 col-md-8 pt-4">
-		<h4> About TREX</h4>
+		<h4 class="col-sm-5 pl-0"> About TREX</h4>
 		<br>
-		<div class="row">
-			<div class="col-md-5">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-md-7 col-lg-5">
 				<h5 class="theme-color">Welcome to TREX 2020!</h5>
+				<p>This is a first-time workshop that is happening in conjuction with the IEEE Visualization Conference, scheduled to take place in Salt Lake City in October 2020.
+					We will share all the relevant news and updates about the workshop on this website.</p>
+			</div>
+			<div class="col-md-5 col-lg-7 text-center mb-3 p-0"><img class="img-fluid col-md-11 col-lg-6" src="slc.jpg"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
 				<p>	This workshop invites contributions that provide a user-centered perspective on how human-machine trust, domain expert knowledge, and familiarity with data science methods influence the use and adoption of visual analytics techniques and systems. 
 					The goal is to discuss and discover challenges and future directions regarding these issues by proposing design guidelines, empirical findings, and visual analytic techniques.	
-					<br>
-					<br>
-					This is a first-time workshop that is happening in conjuction with IEEE Visualization Conference, scheduled to take place in Salt Lake City in October 2020.
-					We will share all the relevant news and updates about the workshop through our website.
 				</p>
 			</div>
-			<div class="col-md-7 justify-content-center align-items-center"><img class="img-fluid" src="slc.jpg"></div>
 		</div>
 	
     </div>
@@ -140,9 +143,14 @@
   </div> -->
 </div>
 
-<!-- <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div> -->
+<hr>
+<div class="row text-center mb-1">
+	<div class="col-sm-12">
+		<i class="text-center" style="color: #5e5d5d; font-size: 0.7rem;"> Copyright <i class="far fa-copyright"></i> 
+			<script>document.write( new Date().getUTCFullYear() );</script> TREX First Workshop on Trust and Experience In Visual Analytics.</i>
+		<i style="color: #5e5d5d; font-size: 0.7rem;"> Workshop logo made from vectors published by <a href="https://www.freepik.com/free-photos-vectors/background">freepik.com</a>. Copyright belongs to freepik and art creators. </i>
+	</div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

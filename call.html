@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" href="pageLogo2.png">
 
@@ -35,15 +36,15 @@
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./index.html');">About TREX</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./call.html');">Call for Papers</a>
+        <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./call.html');"><span class="current-nav"> Call for Papers</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./organizers.html');">Organizers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./papers.html');">Papers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none">
         <a class="nav-link" data-toggle="tab" href="#" onclick="goTo('./schedule.html');">Workshop Schedule and Location</a>
       </li>
       <li class="nav-item">
@@ -54,8 +55,8 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-top sticky-offset" style="background-color: #e8dcf5;">
+  <div class="row mb-5">
+    <div class="col-sm-4 col-lg-3 col-md-4 pt-4 side-panel sticky-offset" style="background-color: #e8dcf5;">
       <!-- <h2>About Me</h2> -->
       <h5 class="mb-0">IEEE VIS 2020, Salt Lake City, Utah <br> <span class="theme-color">25-30 October 2020</span></h5>
       <br>
@@ -100,10 +101,10 @@
 			<h6>Oct 25-26th</h6>
 		</div>
 	</div> -->
-      <hr class="d-sm-none">
+      <!-- <hr class="d-sm-none"> -->
     </div>
     <div class="col-sm-8 col-lg-9 col-md-8 pt-4">
-		<h4> Call for papers</h4>
+		<h4 class="col-sm-3 pl-0"> Call for papers</h4>
 		<br>
 		<h5 class="theme-color">Workshop Goals</h5>
 		<p>   Visual analytics (VA) systems combine computational support and human cognitive and perceptual skills to explore and analyze data.
@@ -155,7 +156,7 @@
         <br>
         <h5 class="theme-color">Submission Format</h5>
         <p>The workshop will accept papers with 2 to 4 pages in length, plus 1 page of references.
-            All submissions must be in <b>EEE VGTC Conference Style Template format </b>.
+            All submissions must be in <b>IEEE VGTC Conference Style Template format </b>.
             (You can download the appropriate templates <a href="http://junctionpublishing.org/vgtc/Tasks/camera.html"> here</a>.)
             <br>
             <br>
@@ -168,17 +169,32 @@
         </p>
         <br>
         <h5 class="theme-color">Publication</h5>
-        <p> We will pursue archival publication through IEEE Xplore for accepted papers.
-            This means that the papers can only be published in a proper journal as an extended version with at least 30\% new content.
-            We will make this information available on our website for authors’ reference, to make sure they are aware of the IEEE policy for archival papers.
-            The accepted papers will also be available on the conference USB Stick and workshop website.
+        <p> All the accepted papers in TREX (regardless of their presentation format) will be archived and published through IEEE Xplore for accepted papers.
+            This means each paper will be published and available through IEEE Xplore with an assigned DOI and are citable.
+            While TREX papers that are extended with at least 30% new content may be re-used for publication in a journal (subject to the rules of that journal), this content cannot be re-used for a future conference submission, such as IEEE VIS, EuroVis, and CHI.
+        </p>
+        <br>
+        <h5 class="theme-color">Review Strategy</h5>
+        <p>As the first step, a member of the organization team will go through the abstracts of all the submissions, and will assign a maximum of two members of the organization team to each paper based on how relevant the paper is to their expertise and research focus.
+            Each paper will then be reviewed by their assigned internal reviewer(s).
+            If the publication is relevant to the focus of the workshop, we would then ask an external reviewer (from a selective program committee) to review the paper as well.
+            All the reviewers would assign a rating from 1 to 5 to denote the quality and relevance of the paper.
+            Based on the final ratings of these papers, we will choose which papers will be accepted for the main conference presentation and which would be accepted for the poster presentation.
+            Evidently, some of the papers might get rejected based on their relevance, quality, and research validity and value.
+            The authors of the accepted <i>posters</i> are given an opportunity to give a short presentation of their poster during the workshop to promote their research and encourage participants to attend the poster session.
+            Each paper would receive a light feedback, and if accepted, the authors can address the feedback in the camera-ready version.
         </p>
     </div>
 </div>
 
-<!-- <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div> -->
+<hr>
+<div class="row text-center mb-1">
+	<div class="col-sm-12">
+		<i class="text-center" style="color: #5e5d5d; font-size: 0.7rem;"> Copyright <i class="far fa-copyright"></i> 
+			<script>document.write( new Date().getUTCFullYear() );</script> TREX First Workshop on Trust and Experience In Visual Analytics.</i>
+		<i style="color: #5e5d5d; font-size: 0.7rem;"> Workshop logo made from vectors published by <a href="https://www.freepik.com/free-photos-vectors/background">freepik.com</a>. Copyright belongs to freepik and art creators. </i>
+	</div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
