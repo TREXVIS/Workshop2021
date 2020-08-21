@@ -3,7 +3,7 @@ h1 {
 }
 
 .side-panel {
-    height: 450px;
+    height: 485px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
 }
@@ -15,7 +15,7 @@ h1 {
     }
 
     .side-panel {
-        height: 530px;
+        height:565px;
     }
 
     .sticky-offset {
@@ -31,7 +31,7 @@ h1 {
       font-size: 1.8rem;
     }
     .side-panel {
-        height: 500px;
+        height: 535px;
     }
 } 
 
@@ -48,7 +48,7 @@ h1 {
       font-size: 2.5rem;
     }
     .side-panel {
-        height: 410px;
+        height: 477px;
     }
 } 
 
