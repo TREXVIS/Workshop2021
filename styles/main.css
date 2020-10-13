@@ -8,6 +8,42 @@ h1 {
     border-bottom-left-radius: 40px;
 }
 
+.invited-talk {
+    border: 1px solid #e8dcf5;
+    /* border-right: 0px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.invited-talk > p {
+    margin-bottom: 0px;
+}
+
+.schedule-title {
+    /* background-color: #b31c79;
+    color: white; */
+    border-color: #b31c79;
+    border: 1px solid #b31c79;
+    border-right: 0;
+    border-left: 0;
+    text-align: center;
+}
+
+.schedule-item-time {
+    /* background-color: #e8dcf5; */
+    color: #5e5d5d;
+    border-bottom: 1px solid #b31c79;
+    border-right: 1px solid #b31c79;
+    text-align: center;
+}
+
+.schedule-item-content {
+    border-bottom: 1px solid #b31c79;
+}
+
 @media (min-width:576px) {
     h1 {
       /* Never get larger than this */
